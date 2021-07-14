@@ -1,0 +1,45 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+**/node_modules
+/.pnp
+.pnp.js
+/package-lock.json
+/yarn.lock
+
+# testing
+/coverage
+
+# production
+/build
+
+# Pact
+/logs
+/pacts/*.json
+
+# misc
+.DS_Store
+**/.idea/**
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/tmp
+**/build_scsslint_tmp*
+report.*.json
+translations.json
+
+# cypress
+cypress/videos/**
+cypress/screenshots/**
+**/nohup.out
+
+# Yalc
+.yalc
+yalc.lock
+
+# docz
+**/.docz/cache/**
+
+# secrets
+**/secrets.*
