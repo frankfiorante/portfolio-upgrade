@@ -1,0 +1,4 @@
+backstop_data/*
+react-app-env.d.ts
+node_modules/*
+*.md
