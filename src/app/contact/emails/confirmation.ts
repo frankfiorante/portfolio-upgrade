@@ -1,4 +1,4 @@
-import { emailLayout } from './layout';
+import { emailLayout } from './emailLayout';
 import type { ContactFormData } from '../schema';
 
 export function confirmationEmail({ name }: Pick<ContactFormData, 'name'>): string {
