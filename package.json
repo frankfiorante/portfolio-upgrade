@@ -18,10 +18,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "typecheck": "tsc --noEmit",
     "prepare": "husky"
   },
   "dependencies": {
     "@hookform/resolvers": "5.2.2",
+    "@vercel/analytics": "2.0.1",
+    "@vercel/speed-insights": "2.0.0",
     "framer-motion": "12.38.0",
     "geist": "^1.7.0",
     "lucide-react": "1.11.0",

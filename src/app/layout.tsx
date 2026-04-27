@@ -4,6 +4,8 @@ import { GeistMono } from 'geist/font/mono';
 import './globals.css';
 import { Nav } from '@/components/nav';
 import { Footer } from '@/components/footer';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const geistSans = GeistSans;
 const geistMono = GeistMono;
@@ -49,6 +51,8 @@ export default function RootLayout({
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
