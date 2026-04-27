@@ -1,0 +1,44 @@
+"use client";
+
+import { skillCategories } from "@/data/skills";
+import { FadeIn } from "./fade-in";
+
+export function SkillsGrid() {
+  return (
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {skillCategories.map((cat, i) => (
+        <FadeIn key={cat.name} delay={i * 0.06}>
+          <div
+            className="rounded-xl p-5"
+            style={{
+              background: "rgba(15,15,26,0.8)",
+              border: "1px solid rgba(255,255,255,0.06)",
+            }}
+          >
+            <h3
+              className="text-xs font-semibold uppercase tracking-widest mb-3"
+              style={{ color: "#6366f1" }}
+            >
+              {cat.name}
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {cat.skills.map(skill => (
+                <span
+                  key={skill}
+                  className="px-2.5 py-1 rounded-lg text-sm"
+                  style={{
+                    background: "rgba(255,255,255,0.04)",
+                    color: "#c8c8e8",
+                    border: "1px solid rgba(255,255,255,0.06)",
+                  }}
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        </FadeIn>
+      ))}
+    </div>
+  );
+}
