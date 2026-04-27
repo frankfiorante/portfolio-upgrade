@@ -30,7 +30,7 @@ export default function Resume() {
               </p>
             </div>
             <a
-              href="/docs/Hyatt-Resume-2023.pdf"
+              href="Hyatt-Resume-2023.pdf"
               download
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold transition-all w-fit"
               style={{
@@ -64,7 +64,7 @@ export default function Resume() {
               <span className="text-sm">Hyatt-Resume-2023.pdf</span>
             </div>
             <a
-              href="/docs/Hyatt-Resume-2023.pdf"
+              href="Hyatt-Resume-2023.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs px-3 py-1.5 rounded-lg transition-colors"
@@ -79,7 +79,7 @@ export default function Resume() {
           </div>
           <div className="w-full" style={{ height: "680px" }}>
             <iframe
-              src="/docs/Hyatt-Resume-2023.pdf"
+              src="Hyatt-Resume-2023.pdf"
               className="w-full h-full"
               title="Frank Fiorante Resume"
             />
