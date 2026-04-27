@@ -41,7 +41,7 @@ export default function ContactForm() {
   useEffect(() => {
     if (state.success === true) {
       reset();
-      toast.success('Message sent! I\'ll get back to you within 24 hours.');
+      toast.success("Message sent! I'll get back to you within 24 hours.");
     } else if (state.success === false) {
       toast.error(state.error || 'Something went wrong. Please try again.');
     }
@@ -53,7 +53,9 @@ export default function ContactForm() {
     formData.append('email', data.email);
     formData.append('subject', data.subject || '');
     formData.append('message', data.message);
-    startTransition(() => { formAction(formData); });
+    startTransition(() => {
+      formAction(formData);
+    });
   };
 
   return (
@@ -68,8 +70,12 @@ export default function ContactForm() {
               placeholder="Frank Fiorante"
               disabled={isPending}
               style={inputStyle}
-              onFocus={e => { e.currentTarget.style.borderColor = 'rgba(99,102,241,0.4)'; }}
-              onBlur={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'; }}
+              onFocus={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(99,102,241,0.4)';
+              }}
+              onBlur={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)';
+              }}
             />
             {errors.name && <span style={errorStyle}>{errors.name.message}</span>}
           </div>
@@ -81,8 +87,12 @@ export default function ContactForm() {
               placeholder="you@example.com"
               disabled={isPending}
               style={inputStyle}
-              onFocus={e => { e.currentTarget.style.borderColor = 'rgba(99,102,241,0.4)'; }}
-              onBlur={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'; }}
+              onFocus={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(99,102,241,0.4)';
+              }}
+              onBlur={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)';
+              }}
             />
             {errors.email && <span style={errorStyle}>{errors.email.message}</span>}
           </div>
@@ -95,8 +105,12 @@ export default function ContactForm() {
             placeholder="What's on your mind?"
             disabled={isPending}
             style={inputStyle}
-            onFocus={e => { e.currentTarget.style.borderColor = 'rgba(99,102,241,0.4)'; }}
-            onBlur={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'; }}
+            onFocus={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(99,102,241,0.4)';
+            }}
+            onBlur={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)';
+            }}
           />
         </div>
 
@@ -108,8 +122,12 @@ export default function ContactForm() {
             placeholder="Your message..."
             disabled={isPending}
             style={{ ...inputStyle, resize: 'vertical' }}
-            onFocus={e => { e.currentTarget.style.borderColor = 'rgba(99,102,241,0.4)'; }}
-            onBlur={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'; }}
+            onFocus={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(99,102,241,0.4)';
+            }}
+            onBlur={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)';
+            }}
           />
           {errors.message && <span style={errorStyle}>{errors.message.message}</span>}
         </div>
