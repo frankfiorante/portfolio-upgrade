@@ -27,7 +27,7 @@ const highlights = [
     label: 'Performance',
     value: '60% faster',
     description: 'API response improvements',
-    color: '#a78bfa',
+    color: '#c9a227',
   },
   {
     icon: Code2,
@@ -46,7 +46,7 @@ export default function Home() {
         <div
           className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] rounded-full pointer-events-none"
           style={{
-            background: 'radial-gradient(ellipse, rgba(99,102,241,0.12) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse, rgba(201,162,39,0.08) 0%, transparent 70%)',
             filter: 'blur(40px)',
           }}
         />
@@ -58,11 +58,11 @@ export default function Home() {
             transition={{ duration: 0.55, delay: 0.06 }}
             className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.08] mb-6"
           >
-            <span style={{ color: '#f0f0ff' }}>Senior Software</span>
+            <span style={{ color: '#f4f1ec' }}>Senior Software</span>
             <br />
             <span
               style={{
-                background: 'linear-gradient(135deg, #818cf8 0%, #6366f1 40%, #a78bfa 100%)',
+                background: 'linear-gradient(135deg, #e2b83d 0%, #c9a227 45%, #a87c10 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
@@ -77,7 +77,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55, delay: 0.12 }}
             className="text-lg md:text-xl leading-relaxed max-w-xl mb-10"
-            style={{ color: '#8888aa' }}
+            style={{ color: '#8a7a68' }}
           >
             I build scalable full-stack systems — from high-throughput Kotlin/Java backends to polished React frontends.
             7+ years shipping production software.
@@ -93,9 +93,9 @@ export default function Home() {
               href="/resume"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-200"
               style={{
-                background: 'rgba(255,255,255,0.06)',
-                color: '#f0f0ff',
-                border: '1px solid rgba(255,255,255,0.1)',
+                background: 'rgba(255,245,225,0.06)',
+                color: '#f4f1ec',
+                border: '1px solid rgba(255,245,225,0.1)',
               }}
             >
               <Download size={16} />
@@ -105,7 +105,7 @@ export default function Home() {
               href="/contact"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold transition-all"
               style={{
-                color: '#8888aa',
+                color: '#8a7a68',
               }}
             >
               Contact Me
@@ -129,7 +129,7 @@ export default function Home() {
                 target={href.startsWith('http') ? '_blank' : undefined}
                 rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
                 className="p-2 rounded-lg transition-colors"
-                style={{ color: '#8888aa' }}
+                style={{ color: '#8a7a68' }}
                 aria-label={label}
               >
                 <Icon size={20} />
@@ -145,7 +145,7 @@ export default function Home() {
       {/* Highlights */}
       <section className="max-w-6xl mx-auto px-6 py-24">
         <FadeIn>
-          <p className="text-xs font-semibold uppercase tracking-widest mb-8" style={{ color: '#6366f1' }}>
+          <p className="text-xs font-semibold uppercase tracking-widest mb-8" style={{ color: '#c9a227' }}>
             Career Highlights
           </p>
         </FadeIn>
@@ -155,8 +155,8 @@ export default function Home() {
               <div
                 className="rounded-2xl p-6 transition-all duration-300"
                 style={{
-                  background: 'rgba(15,15,26,0.8)',
-                  border: '1px solid rgba(255,255,255,0.06)',
+                  background: 'rgba(19,18,16,0.8)',
+                  border: '1px solid rgba(255,245,225,0.06)',
                 }}
               >
                 <h.icon size={20} style={{ color: h.color }} className="mb-4" />
@@ -164,7 +164,7 @@ export default function Home() {
                   {h.value}
                 </p>
                 <p className="text-sm font-medium text-white/80">{h.label}</p>
-                <p className="text-xs mt-1" style={{ color: '#8888aa' }}>
+                <p className="text-xs mt-1" style={{ color: '#8a7a68' }}>
                   {h.description}
                 </p>
               </div>
@@ -179,28 +179,28 @@ export default function Home() {
           <div
             className="rounded-3xl p-10 md:p-16 text-center relative overflow-hidden"
             style={{
-              background: 'rgba(15,15,26,0.8)',
-              border: '1px solid rgba(99,102,241,0.2)',
+              background: 'rgba(19,18,16,0.8)',
+              border: '1px solid rgba(201,162,39,0.15)',
             }}
           >
             <div
               className="absolute inset-0 pointer-events-none"
               style={{
-                background: 'radial-gradient(600px circle at 50% 0%, rgba(99,102,241,0.1), transparent 60%)',
+                background: 'radial-gradient(600px circle at 50% 0%, rgba(201,162,39,0.07), transparent 60%)',
               }}
             />
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold text-white/90 mb-4">Let&apos;s build something great.</h2>
-              <p className="text-lg mb-8 max-w-md mx-auto" style={{ color: '#8888aa' }}>
+              <p className="text-lg mb-8 max-w-md mx-auto" style={{ color: '#8a7a68' }}>
                 Have a project, question, or just want to connect? I&apos;d love to hear from you.
               </p>
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-sm font-semibold transition-all"
                 style={{
-                  background: 'linear-gradient(135deg, #6366f1, #818cf8)',
-                  color: '#fff',
-                  boxShadow: '0 0 40px rgba(99,102,241,0.3)',
+                  background: 'linear-gradient(135deg, #c9a227, #e2b83d)',
+                  color: '#0d0c0a',
+                  boxShadow: '0 0 40px rgba(201,162,39,0.3)',
                 }}
               >
                 Get in touch

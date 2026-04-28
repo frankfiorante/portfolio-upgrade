@@ -7,9 +7,9 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         <div>
           <p className="text-sm font-semibold text-white/90">
-            <span className="text-indigo-400">F</span>rank Fiorante
+            <span style={{ color: '#e2b83d' }}>F</span>rank Fiorante
           </p>
-          <p className="text-xs mt-1" style={{ color: '#8888aa' }}>
+          <p className="text-xs mt-1" style={{ color: '#8a7a68' }}>
             Senior Software Engineer · Chicago, IL
           </p>
         </div>
@@ -20,7 +20,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-lg transition-colors"
-            style={{ color: '#8888aa' }}
+            style={{ color: '#8a7a68' }}
             aria-label="GitHub"
           >
             <GithubIcon width={18} height={18} />
@@ -30,7 +30,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-lg transition-colors"
-            style={{ color: '#8888aa' }}
+            style={{ color: '#8a7a68' }}
             aria-label="LinkedIn"
           >
             <LinkedinIcon width={18} height={18} />
@@ -38,14 +38,14 @@ export function Footer() {
           <a
             href="mailto:develop@frankfiorante.com"
             className="p-2 rounded-lg transition-colors"
-            style={{ color: '#8888aa' }}
+            style={{ color: '#8a7a68' }}
             aria-label="Email"
           >
             <Mail size={18} />
           </a>
         </div>
 
-        <p className="text-xs" style={{ color: '#8888aa' }}>
+        <p className="text-xs" style={{ color: '#8a7a68' }}>
           © {new Date().getFullYear()} Frank Fiorante
         </p>
       </div>

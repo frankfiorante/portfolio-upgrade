@@ -17,11 +17,11 @@ export default function Resume() {
         <FadeIn>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-2">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: '#6366f1' }}>
+              <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: '#c9a227' }}>
                 Resume
               </p>
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white/90">Frank Fiorante</h1>
-              <p className="text-lg mt-2" style={{ color: '#8888aa' }}>
+              <p className="text-lg mt-2" style={{ color: '#8a7a68' }}>
                 Senior Software Engineer · Chicago, IL
               </p>
             </div>
@@ -30,9 +30,9 @@ export default function Resume() {
               download
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold transition-all w-fit"
               style={{
-                background: 'linear-gradient(135deg, #6366f1, #818cf8)',
-                color: '#fff',
-                boxShadow: '0 0 30px rgba(99,102,241,0.3)',
+                background: 'linear-gradient(135deg, #c9a227, #e2b83d)',
+                color: '#0d0c0a',
+                boxShadow: '0 0 30px rgba(201,162,39,0.3)',
               }}
             >
               <Download size={16} />
@@ -47,15 +47,15 @@ export default function Resume() {
         <div
           className="rounded-2xl overflow-hidden mb-16"
           style={{
-            border: '1px solid rgba(255,255,255,0.06)',
-            background: 'rgba(15,15,26,0.8)',
+            border: '1px solid rgba(255,245,225,0.06)',
+            background: 'rgba(19,18,16,0.8)',
           }}
         >
           <div
             className="px-6 py-4 flex items-center justify-between border-b"
-            style={{ borderColor: 'rgba(255,255,255,0.06)' }}
+            style={{ borderColor: 'rgba(255,245,225,0.06)' }}
           >
-            <div className="flex items-center gap-2" style={{ color: '#8888aa' }}>
+            <div className="flex items-center gap-2" style={{ color: '#8a7a68' }}>
               <FileText size={16} />
               <span className="text-sm">Hyatt-Resume-2023.pdf</span>
             </div>
@@ -65,9 +65,9 @@ export default function Resume() {
               rel="noopener noreferrer"
               className="text-xs px-3 py-1.5 rounded-lg transition-colors"
               style={{
-                background: 'rgba(99,102,241,0.1)',
-                color: '#818cf8',
-                border: '1px solid rgba(99,102,241,0.2)',
+                background: 'rgba(201,162,39,0.1)',
+                color: '#c9a227',
+                border: '1px solid rgba(201,162,39,0.2)',
               }}
             >
               Open in tab
@@ -94,11 +94,11 @@ export default function Resume() {
               <div
                 className="rounded-xl p-5"
                 style={{
-                  background: 'rgba(15,15,26,0.8)',
-                  border: '1px solid rgba(255,255,255,0.06)',
+                  background: 'rgba(19,18,16,0.8)',
+                  border: '1px solid rgba(255,245,225,0.06)',
                 }}
               >
-                <p className="text-xs mb-1" style={{ color: '#8888aa' }}>
+                <p className="text-xs mb-1" style={{ color: '#8a7a68' }}>
                   {item.label}
                 </p>
                 <p className="text-lg font-semibold text-white/90">{item.value}</p>

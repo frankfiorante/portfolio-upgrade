@@ -1,7 +1,7 @@
 export function emailLayout(content: string): string {
   return `
     <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 600px; margin: 0 auto; color: #333; background: #ffffff;">
-      <div style="background: linear-gradient(135deg, #6366f1, #818cf8); padding: 28px 32px;">
+      <div style="background: linear-gradient(135deg, #c9a227, #e2b83d); padding: 28px 32px;">
         <h1 style="color: #ffffff; font-size: 20px; font-weight: 600; letter-spacing: 0.5px; margin: 0;">
           Frank Fiorante
         </h1>

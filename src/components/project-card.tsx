@@ -14,23 +14,23 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
       transition={{ duration: 0.5, delay: index * 0.08 }}
       className="group relative rounded-2xl p-6 transition-all duration-300 flex flex-col gap-4"
       style={{
-        background: 'rgba(15,15,26,0.8)',
-        border: '1px solid rgba(255,255,255,0.06)',
+        background: 'rgba(19,18,16,0.8)',
+        border: '1px solid rgba(255,245,225,0.06)',
       }}
       onMouseEnter={(e) => {
-        (e.currentTarget as HTMLElement).style.borderColor = 'rgba(99,102,241,0.2)';
-        (e.currentTarget as HTMLElement).style.background = 'rgba(15,15,26,1)';
+        (e.currentTarget as HTMLElement).style.borderColor = 'rgba(201,162,39,0.2)';
+        (e.currentTarget as HTMLElement).style.background = 'rgba(19,18,16,1)';
       }}
       onMouseLeave={(e) => {
-        (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.06)';
-        (e.currentTarget as HTMLElement).style.background = 'rgba(15,15,26,0.8)';
+        (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,245,225,0.06)';
+        (e.currentTarget as HTMLElement).style.background = 'rgba(19,18,16,0.8)';
       }}
     >
       <div
         className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
         style={{
           background:
-            'radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(99,102,241,0.04), transparent 40%)',
+            'radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(201,162,39,0.04), transparent 40%)',
         }}
       />
 
@@ -50,7 +50,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
               target="_blank"
               rel="noopener noreferrer"
               className="p-1.5 rounded-lg transition-colors"
-              style={{ color: '#8888aa' }}
+              style={{ color: '#8a7a68' }}
               aria-label="GitHub"
             >
               <GithubIcon width={16} height={16} />
@@ -62,7 +62,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
               target="_blank"
               rel="noopener noreferrer"
               className="p-1.5 rounded-lg transition-colors"
-              style={{ color: '#8888aa' }}
+              style={{ color: '#8a7a68' }}
               aria-label="Demo"
             >
               <ExternalLink size={16} />
@@ -71,7 +71,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
         </div>
       </div>
 
-      <p className="text-sm leading-relaxed" style={{ color: '#8888aa' }}>
+      <p className="text-sm leading-relaxed" style={{ color: '#8a7a68' }}>
         {project.description}
       </p>
 
@@ -81,16 +81,16 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
             key={t}
             className="px-2.5 py-0.5 rounded-full text-xs"
             style={{
-              background: 'rgba(99,102,241,0.08)',
-              border: '1px solid rgba(99,102,241,0.12)',
-              color: '#818cf8',
+              background: 'rgba(201,162,39,0.08)',
+              border: '1px solid rgba(201,162,39,0.14)',
+              color: '#c9a227',
             }}
           >
             {t}
           </span>
         ))}
         {project.tech.length > 5 && (
-          <span className="px-2.5 py-0.5 text-xs" style={{ color: '#8888aa' }}>
+          <span className="px-2.5 py-0.5 text-xs" style={{ color: '#8a7a68' }}>
             +{project.tech.length - 5} more
           </span>
         )}

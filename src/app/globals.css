@@ -4,21 +4,21 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  --color-background: #080810;
-  --color-surface: #0f0f1a;
-  --color-surface-raised: #16161f;
-  --color-border: rgba(255, 255, 255, 0.08);
-  --color-border-hover: rgba(255, 255, 255, 0.16);
+  --color-background: #0d0c0a;
+  --color-surface: #131210;
+  --color-surface-raised: #1a1816;
+  --color-border: rgba(255, 245, 225, 0.07);
+  --color-border-hover: rgba(255, 245, 225, 0.14);
 
-  --color-foreground: #f0f0ff;
-  --color-muted: #8888aa;
-  --color-accent: #6366f1;
-  --color-accent-bright: #818cf8;
-  --color-accent-glow: rgba(99, 102, 241, 0.15);
+  --color-foreground: #f4f1ec;
+  --color-muted: #8a7a68;
+  --color-accent: #c9a227;
+  --color-accent-bright: #e2b83d;
+  --color-accent-glow: rgba(201, 162, 39, 0.12);
 
   --color-green: #34d399;
   --color-blue: #60a5fa;
-  --color-purple: #a78bfa;
+  --color-amber: #c9a227;
   --color-orange: #fb923c;
 }
 
@@ -39,8 +39,8 @@ body {
 }
 
 ::selection {
-  background: rgba(99, 102, 241, 0.3);
-  color: #f0f0ff;
+  background: rgba(201, 162, 39, 0.3);
+  color: #f4f1ec;
 }
 
 ::-webkit-scrollbar {

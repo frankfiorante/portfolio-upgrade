@@ -13,7 +13,7 @@ const initialState: ContactFormState = {};
 const inputStyle = {
   background: 'rgba(255,255,255,0.04)',
   border: '1px solid rgba(255,255,255,0.08)',
-  color: '#f0f0ff',
+  color: '#f4f1ec',
   borderRadius: '10px',
   padding: '12px 16px',
   width: '100%',
@@ -22,7 +22,7 @@ const inputStyle = {
   transition: 'border-color 0.2s',
 };
 
-const labelStyle = { fontSize: '12px', fontWeight: 500, color: '#8888aa' } as const;
+const labelStyle = { fontSize: '12px', fontWeight: 500, color: '#8a7a68' } as const;
 const errorStyle = { fontSize: '12px', color: '#f87171', marginTop: '4px' } as const;
 
 export default function ContactForm() {
@@ -71,7 +71,7 @@ export default function ContactForm() {
               disabled={isPending}
               style={inputStyle}
               onFocus={(e) => {
-                e.currentTarget.style.borderColor = 'rgba(99,102,241,0.4)';
+                e.currentTarget.style.borderColor = 'rgba(201,162,39,0.4)';
               }}
               onBlur={(e) => {
                 e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)';
@@ -88,7 +88,7 @@ export default function ContactForm() {
               disabled={isPending}
               style={inputStyle}
               onFocus={(e) => {
-                e.currentTarget.style.borderColor = 'rgba(99,102,241,0.4)';
+                e.currentTarget.style.borderColor = 'rgba(201,162,39,0.4)';
               }}
               onBlur={(e) => {
                 e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)';
@@ -106,7 +106,7 @@ export default function ContactForm() {
             disabled={isPending}
             style={inputStyle}
             onFocus={(e) => {
-              e.currentTarget.style.borderColor = 'rgba(99,102,241,0.4)';
+              e.currentTarget.style.borderColor = 'rgba(201,162,39,0.4)';
             }}
             onBlur={(e) => {
               e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)';
@@ -123,7 +123,7 @@ export default function ContactForm() {
             disabled={isPending}
             style={{ ...inputStyle, resize: 'vertical' }}
             onFocus={(e) => {
-              e.currentTarget.style.borderColor = 'rgba(99,102,241,0.4)';
+              e.currentTarget.style.borderColor = 'rgba(201,162,39,0.4)';
             }}
             onBlur={(e) => {
               e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)';
@@ -137,9 +137,9 @@ export default function ContactForm() {
           disabled={isPending}
           className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold transition-all disabled:opacity-60"
           style={{
-            background: 'linear-gradient(135deg, #6366f1, #818cf8)',
-            color: '#fff',
-            boxShadow: '0 0 30px rgba(99,102,241,0.25)',
+            background: 'linear-gradient(135deg, #c9a227, #e2b83d)',
+            color: '#0d0c0a',
+            boxShadow: '0 0 30px rgba(201,162,39,0.25)',
           }}
         >
           {isPending ? (

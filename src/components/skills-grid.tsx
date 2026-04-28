@@ -11,11 +11,11 @@ export function SkillsGrid() {
           <div
             className="rounded-xl p-5"
             style={{
-              background: 'rgba(15,15,26,0.8)',
-              border: '1px solid rgba(255,255,255,0.06)',
+              background: 'rgba(19,18,16,0.8)',
+              border: '1px solid rgba(255,245,225,0.06)',
             }}
           >
-            <h3 className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#6366f1' }}>
+            <h3 className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#c9a227' }}>
               {cat.name}
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -24,9 +24,9 @@ export function SkillsGrid() {
                   key={skill}
                   className="px-2.5 py-1 rounded-lg text-sm"
                   style={{
-                    background: 'rgba(255,255,255,0.04)',
-                    color: '#c8c8e8',
-                    border: '1px solid rgba(255,255,255,0.06)',
+                    background: 'rgba(255,245,225,0.04)',
+                    color: '#d4cfc8',
+                    border: '1px solid rgba(255,245,225,0.06)',
                   }}
                 >
                   {skill}

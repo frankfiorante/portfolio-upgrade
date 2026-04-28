@@ -17,13 +17,13 @@ export default function About() {
       {/* Header */}
       <div className="pt-12 pb-16 max-w-2xl">
         <FadeIn>
-          <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: '#6366f1' }}>
+          <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: '#c9a227' }}>
             About Me
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white/90 mb-6">
             Engineering with intention.
           </h1>
-          <p className="text-lg leading-relaxed" style={{ color: '#8888aa' }}>
+          <p className="text-lg leading-relaxed" style={{ color: '#8a7a68' }}>
             I&apos;m a full-stack engineer based in Chicago with 7+ years of experience building and shipping production
             systems. I specialize in JVM backends and modern React frontends — with experience across healthcare and
             hospitality at scale.
@@ -36,12 +36,12 @@ export default function About() {
         <div
           className="rounded-2xl p-8 mb-16"
           style={{
-            background: 'rgba(15,15,26,0.8)',
-            border: '1px solid rgba(255,255,255,0.06)',
+            background: 'rgba(19,18,16,0.8)',
+            border: '1px solid rgba(255,245,225,0.06)',
           }}
         >
           <h2 className="text-lg font-semibold text-white/90 mb-5">My Engineering Story</h2>
-          <div className="prose max-w-none space-y-4 text-sm leading-relaxed" style={{ color: '#c8c8e8' }}>
+          <div className="prose max-w-none space-y-4 text-sm leading-relaxed" style={{ color: '#d4cfc8' }}>
             <p>
               I started my career at HCSC (Blue Cross Blue Shield of Illinois), where I interned and then grew into a
               full-time software developer role. Building Java Spring Boot APIs and React frontends for healthcare
@@ -77,20 +77,20 @@ export default function About() {
           {
             title: 'Code is communication',
             body: 'The reader matters as much as the compiler. I write for the engineer who maintains it next.',
-            color: '#a78bfa',
+            color: '#c9a227',
           },
         ].map((p, i) => (
           <FadeIn key={p.title} delay={i * 0.08}>
             <div
               className="rounded-2xl p-6 h-full"
               style={{
-                background: 'rgba(15,15,26,0.8)',
-                border: '1px solid rgba(255,255,255,0.06)',
+                background: 'rgba(19,18,16,0.8)',
+                border: '1px solid rgba(255,245,225,0.06)',
               }}
             >
               <div className="w-1 h-8 rounded-full mb-4" style={{ background: p.color }} />
               <h3 className="font-semibold text-white/90 mb-2">{p.title}</h3>
-              <p className="text-sm leading-relaxed" style={{ color: '#8888aa' }}>
+              <p className="text-sm leading-relaxed" style={{ color: '#8a7a68' }}>
                 {p.body}
               </p>
             </div>
@@ -119,19 +119,19 @@ export default function About() {
         <div
           className="rounded-2xl p-6 flex items-center gap-5"
           style={{
-            background: 'rgba(15,15,26,0.8)',
-            border: '1px solid rgba(255,255,255,0.06)',
+            background: 'rgba(19,18,16,0.8)',
+            border: '1px solid rgba(255,245,225,0.06)',
           }}
         >
           <div
             className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
-            style={{ background: 'rgba(99,102,241,0.1)', border: '1px solid rgba(99,102,241,0.2)' }}
+            style={{ background: 'rgba(201,162,39,0.1)', border: '1px solid rgba(201,162,39,0.2)' }}
           >
-            <GraduationCap size={22} style={{ color: '#818cf8' }} />
+            <GraduationCap size={22} style={{ color: '#c9a227' }} />
           </div>
           <div>
             <p className="font-semibold text-white/90">{education.degree}</p>
-            <p className="text-sm" style={{ color: '#8888aa' }}>
+            <p className="text-sm" style={{ color: '#8a7a68' }}>
               {education.school} · {education.year}
             </p>
           </div>
