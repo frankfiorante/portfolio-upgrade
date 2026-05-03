@@ -101,15 +101,15 @@ export default function Home() {
               <Download size={16} />
               Resume
             </Link>
-            <Link
-              href="/contact"
+            <a
+              href="mailto:develop@frankfiorante.com"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold transition-all"
               style={{
                 color: '#8a7a68',
               }}
             >
               Contact Me
-            </Link>
+            </a>
           </motion.div>
 
           <motion.div
@@ -194,8 +194,8 @@ export default function Home() {
               <p className="text-lg mb-8 max-w-md mx-auto" style={{ color: '#8a7a68' }}>
                 Have a project, question, or just want to connect? I&apos;d love to hear from you.
               </p>
-              <Link
-                href="/contact"
+              <a
+                href="mailto:develop@frankfiorante.com"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-sm font-semibold transition-all"
                 style={{
                   background: 'linear-gradient(135deg, #c9a227, #e2b83d)',
@@ -205,7 +205,7 @@ export default function Home() {
               >
                 Get in touch
                 <ArrowRight size={16} />
-              </Link>
+              </a>
             </div>
           </div>
         </FadeIn>
