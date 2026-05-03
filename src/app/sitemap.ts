@@ -8,6 +8,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `https://${host}`, lastModified: new Date() },
     { url: `https://${host}/about`, lastModified: new Date() },
     { url: `https://${host}/resume`, lastModified: new Date() },
-    { url: `https://${host}/contact`, lastModified: new Date() },
   ];
 }
